@@ -55,15 +55,15 @@
 }
 
 .conteudo {
-    background-color: #f5f1f1;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.175);
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .img-card {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 8px 8px 0 0;
 }
@@ -71,9 +71,10 @@
 h3 {
     margin-top: 16px;
     font-size: 1.5em;
-    color: #d67b27;
+    color: #000000;
     padding: 5px;
-    text-align: center;
+    text-align: left;
+    justify-content: left;
 }
 
 p {
