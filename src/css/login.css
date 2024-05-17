@@ -13,10 +13,14 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.titulo {
+   text-align: center;
+   margin-bottom: 20px;
+}
 .container {
     background-color: #f5f1f1;
     padding: 6px;
+    margin-bottom: 60px;
     width: 350px;
     height: 450px;
     display: flex;
@@ -53,9 +57,9 @@ form {
 
  .btnColor{
     position: absolute;
-    width: 100px;
+    width: 130px;
     height: 100%;
-    background: linear-gradient(to right, #b96a20a2, #d67b27 );
+    background: linear-gradient(to right, #f29f05, #f29f05 );
     border-radius: 30px;
     transition: .3s;
  }
@@ -64,20 +68,20 @@ form {
     border: none;
     margin-bottom: 5px;
     border-radius: 5px;
-    padding: 8px 0 8px 10px;
+    padding: 8px 0 8px 15px;
     outline: none;
     width: 100%;
     font-size: 12px;
  }
 
  button[type="submit"]{
-    background: #d67b27;
+    background: #f29f05;
     color: #000;
     border-radius: 5px;
     width: 100%;
     border: none;
     outline: none;
-    padding: 8px 0 8px 15px;
+    padding: 8px 0 8px 10px;
     font-size: 15px;
     margin-top: 30px;
     cursor: pointer;
