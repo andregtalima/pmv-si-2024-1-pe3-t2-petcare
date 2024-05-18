@@ -1,30 +1,14 @@
-@import url('../css/global-styles/petcare_colors_style.css');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+   margin: 0;
+   padding: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-header {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    padding: 20px;
-}
-
-#logo {
-    width: 200px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .titulo {
@@ -39,140 +23,94 @@ h3 {
 }
 
 .container {
-    background-color: #f5f1f1;
-    padding: 6px;
-    margin-bottom: 60px;
-    width: 350px;
-    height: 470px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 0 var(--petcare-color-gray-light);
+   padding: 6px;
+   margin-bottom: 60px;
+   width: 350px;
+   height: 450px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   overflow: hidden;
+   border-radius: 10px;
+   background-color: var(--petcare-color-white);
+   box-shadow: 0 0 20px 0 var(--petcare-color-gray-light);
 }
 
 form {
-    position: absolute;
-    top: 80px;
-    transition: .5s;
-    width: 300px;
-    height: 400px;
-    margin-top: 30px;
+   position: absolute;
+   top: 80px;
+   transition: .5s;
+   width: 300px;
+   height: 400px;
+   margin-top: 30px;
 }
 
 .buttonsForm {
-    margin-top: 40px;
-    position: relative;
-    border-radius: 30px;
-    box-shadow: 0 0 7px 0 var(--petcare-color-dark-orange);
+   margin-top: 40px;
+   position: relative;
+   border-radius: 30px;
+   box-shadow: 0 0 7px 0 #d67b27;
+
 }
 
 .buttonsForm button {
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    position: relative;
-    padding: 10px 28px;
+   cursor: pointer;
+   background: transparent;
+   border: none;
+   position: relative;
+   padding: 10px 29px;
 }
 
 .btnColor {
-    position: absolute;
-    width: 130px;
-    height: 100%;
-    background: var(--petcare-color-orange);
-    border-radius: 30px;
-    transition: .3s;
+   position: absolute;
+   width: 130px;
+   height: 100%;
+   background: linear-gradient(to right, #f29f05, #f29f05);
+   border-radius: 30px;
+   transition: .3s;
 }
 
 input[type="text"],
 input[type="password"] {
-    border: none;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    padding: 8px 0 8px 15px;
-    outline: none;
-    width: 100%;
-    font-size: 12px;
-}
-
-input:active {
-    border-color: var(--petcare-color-orange);
-    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
-    outline: none;
+   border: none;
+   margin-bottom: 5px;
+   border-radius: 5px;
+   padding: 8px 0 8px 15px;
+   outline: none;
+   width: 100%;
+   font-size: 12px;
 }
 
 button[type="submit"] {
-    background: var(--petcare-color-orange);
-    color: #000;
-    border-radius: 5px;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 8px 0 8px 10px;
-    font-size: 15px;
-    margin-top: 30px;
-    cursor: pointer;
+   background: #f29f05;
+   color: #000;
+   border-radius: 5px;
+   width: 100%;
+   border: none;
+   outline: none;
+   padding: 8px 0 8px 10px;
+   font-size: 15px;
+   margin-top: 30px;
+   cursor: pointer;
 }
 
 #signin {
-    left: 25px;
+   left: 25px;
 }
 
 #signup {
-    left: 450px;
+   left: 450px;
+}
+
+h3 {
+   font-family: "Poppins", sans-serif;
+   font-size: 13px;
+   margin: 20px 0 0 0;
 }
 
 label {
-    font-size: 10px;
-    font-family: "Poppins", sans-serif;
-    margin: 10px 0 0 0;
-}
-
-footer {
-    background-color: var(--petcare-color-orange);
-    padding: 20px 0;
-    flex-shrink: 0;
-    bottom: 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-text {
-    font-size: 14px;
-    margin-left: 40px;
-}
-
-.footer-social-icons img {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-}
-
-@media screen and (max-width: 1000px) {
-    header {
-        justify-content: center;
-    }
-
-    .titulo {
-        margin-top: 40px;
-    }
-
-    h3 {
-        margin-bottom: 20px;
-    }
-
-    .container {
-        margin-bottom: 20px;
-    }
-
-    
+   font-size: 10px;
+   font-family: "Poppins", sans-serif;
+   margin: 10px 0 0 0;
 }

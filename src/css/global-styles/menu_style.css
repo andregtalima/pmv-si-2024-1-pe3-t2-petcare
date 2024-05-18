@@ -1,5 +1,5 @@
 @import url('../global-styles/petcare_colors_style.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
   --petcare-transition-width: width 0.3s ease;
@@ -8,12 +8,30 @@
   --petcare-shadow-1: 0 0px 10px rgba(0, 0, 0, 0.5);
 }
 
+body {
+  font-family: 'Ubuntu Sans', sans-serif;
+}
+
+.petcare-header {
+  padding: 12px;
+  width: 100%;
+  background-color: var(--petcare-color-full-white);
+}
+
+.regarding-user {
+  float: inline-end;
+  margin-top: 0px;
+  font-weight: bold;
+  color: var(--petcare-color-dark-orange);
+  font-size: 24px;
+}
+
+
 /******************/
 /** Desktop Menu **/
 /******************/
 
 .sidebar {
-  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   position: fixed;
   top: 0;
@@ -35,7 +53,7 @@
 }
 
 .sidebar:hover .sidebar-item-text {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .sidebar-item {
