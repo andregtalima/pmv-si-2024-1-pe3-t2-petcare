@@ -150,6 +150,10 @@ label {
     justify-content: center;
 }
 
+.pt-5 {
+    margin-right: 40px;
+}
+
 .footer span {
     margin-right: auto;
     margin-left: 50px;
