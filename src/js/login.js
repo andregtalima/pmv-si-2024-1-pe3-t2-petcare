@@ -37,6 +37,18 @@ document.querySelector('#btnSignup').addEventListener('click', () => {
 
 // Validações do preenchimento do cadastro
 
+lblErro.addEventListener('keyup', () => {
+    if (nome.value.length <= 2) {
+        labelNome.setAttribute('style', 'color: red')
+        labelNome.innerHTML = 'Nome *Insira no mínimo 3 caracteres*'
+        validNome = false
+    } else {
+        labelNome.setAttribute('style', 'color: black')
+        labelNome.innerHTML = 'Nome'
+        validNome = true
+    }
+})
+
 nome.addEventListener('keyup', () => {
     if (nome.value.length <= 2) {
         labelNome.setAttribute('style', 'color: red')
@@ -87,7 +99,7 @@ confirmSenha.addEventListener('keyup', () => {
 })
 
 function navegar() {
-    window.location.href = 'index2.html';
+    window.location.href = 'index.html';
 }
 
 function cadastrar() {
@@ -116,7 +128,7 @@ function entrar() {
     const usuarioSenha = localStorage.getItem('usuarioSenha');
 
     if (emailLogin === usuarioEmail && senhaLogin === usuarioSenha) {
-        window.location.href = 'index2.html';
+        window.location.href = 'index.html';
     } else {
         alert('Email ou senha incorretos!');
     }
