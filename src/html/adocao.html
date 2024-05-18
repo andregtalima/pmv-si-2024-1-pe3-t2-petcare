@@ -12,7 +12,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="../css/global-styles/menu_style.css" rel="stylesheet">
-    <title>PetCare :: Home</title>
+    <link href="../css/adocao.css" rel="stylesheet">
+    <title>PetCare :: Adoção</title>
 </head>
 
 <body>
@@ -56,7 +57,7 @@
                 <a href="#" class="tablet-sidebar-item" data-title="Serviços">
                     <i class="material-icons">pets</i>
                 </a>
-                <a href="../html/adocao.html" id="sidebar-tab-item-logged" class="tablet-sidebar-item" data-title="Adoção">
+                <a href="#" id="sidebar-tab-item-logged" class="tablet-sidebar-item" data-title="Adoção">
                     <i class="material-icons">favorite</i>
                 </a>
                 <a href="#" class="tablet-sidebar-item" data-title="Dicas">
@@ -76,7 +77,7 @@
                 <header>
                     <nav class="navbar navbar-expand-lg bg-white p-3">
                         <div class="container-fluid">
-                            <a class="navbar-brand" href="#"><img class="nav-logo" src="./assets/Logo.svg"
+                            <a class="navbar-brand" href="../html/index.html"><img class="nav-logo" src="./assets/Logo.svg"
                                 alt="Logo da PetCare" /></a>
                                 <label id="welcome-message"></label>
                             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -141,16 +142,7 @@
                                         <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
                                     </svg>
                                 </div>
-                                <div class="carousel-item active">
-                                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800"
-                                        height="400" xmlns="http://www.w3.org/2000/svg" role="img"
-                                        aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice"
-                                        focusable="false">
-                                        <title>Placeholder</title>
-                                        <rect width="100%" height="100%" fill="#555"></rect>
-                                        <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
-                                    </svg>
-                                </div>
+                                
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                                 data-bs-slide="prev">
@@ -164,131 +156,66 @@
                             </button>
                         </div>
                     </section>
-                    <section>
-                        <h2 class="text-center py-2">Produtos Recomendados</h2>
-                        <div class="d-flex flex-wrap gap-3">
-                            <div class="card mx-auto" style="width: 18rem">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#868e96"></rect>
-                                    <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-                                </svg>
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.
-                                    </p>
-                                    <div class="align-self-center">
-                                        <a href="#" class="btn btn-card">Adicionar</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mx-auto" style="width: 18rem">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#868e96"></rect>
-                                    <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-                                </svg>
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.
-                                    </p>
-                                    <div class="align-self-center">
-                                        <a href="#" class="btn btn-card">Adicionar</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mx-auto" style="width: 18rem">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#868e96"></rect>
-                                    <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-                                </svg>
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">
-                                        Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.
-                                    </p>
-                                    <div class="align-self-center">
-                                        <a href="#" class="btn btn-card">Adicionar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="mx-auto p-3">
-                        <h2 class="text-center py-3">Categorias populares</h2>
-                        <div class="d-flex flex-row flex-wrap justify-content-center gap-3">
-                            <div class="d-flex flex-column gap-2 align-items-center">
-                                <img class="img-categ-pop bg-body-secondary rounded-2" src="./assets/racao_dog 1.svg"
-                                    alt="" />
-                                <p>Ração para cachorro</p>
-                            </div>
-                            <div class="d-flex flex-column gap-2 align-items-center">
-                                <img class="img-categ-pop bg-body-secondary rounded-2" src="./assets/racao_cat 1.svg"
-                                    alt="" />
-                                <p>Ração para gato</p>
-                            </div>
-                            <div class="d-flex flex-column gap-2 align-items-center">
-                                <img class="img-categ-pop bg-body-secondary rounded-2" src="./assets/brinquedo 1.svg"
-                                    alt="" />
-                                <p>Acessórios</p>
-                            </div>
-                            <div class="d-flex flex-column gap-2 align-items-center">
-                                <img class="img-categ-pop bg-body-secondary rounded-2" src="./assets/farmacia 1.svg"
-                                    alt="" />
-                                <p>Farmácia</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="p-2">
-                        <h2 class="text-center pb-3">Vantagens em comprar na PetCare</h2>
-                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
-                            <div
-                                class="d-flex flex-column justify-content-center align-items-center bg-body-secondary card-vantagens">
-                                <img src="./assets/frete.svg" alt="" />
-                                <p class="mb-0">Frete Grátis Brasil</p>
-                                <a class="text-black ver-regras" href="#">Ver regras</a>
-                            </div>
-                            <div
-                                class="d-flex flex-column justify-content-center align-items-center bg-body-secondary card-vantagens">
-                                <img src="./assets/credi_card.svg" alt="" />
-                                <p class="mb-0">Até 10x Sem Juros</p>
-                                <a class="text-black ver-regras" href="#">Ver regras</a>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <div class="novidades d-flex flex-column align-items-center my-3 p-3">
-                        <p class="text-start">
-                            Cadastra-se e receba novidades e promoções do mundo Pet
-                        </p>
-                        <form class="mb-2 form-novidades">
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Seu email" />
-                            </div>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected="">Seu pet</option>
-                                <option value="1">Cachorro</option>
-                                <option value="2">Gato</option>
-                            </select>
-                        </form>
-                        <span class="text-center mb-3">Ao se cadastrar você concorda com a nossa política de privacidade
-                        </span>
-                        <button type="button" class="btn btn-form">Cadastrar</button>
-                    </div>
+                    <section class="d-flex flex-column justify-content-center align-items-center gap-3">
+                        <h3>Informe o tipo de Pet que deseja adotar e o estado/cidade em que reside.</h3>
+                        <br>
+                        <form id="form_adocao" action="../html/agradecimentos.html">
+                            <label for="pet">Pet:</label><br>
+                            <label class="pet-label">
+                                <input type="radio" id="cachorro" name="pet" value="cachorro">
+                                <img class="pet-option" src="../../imagens/adocao/cachorro-1.jpg" alt="Cachorro"> Cachorro
+                            </label>
+                            <label class="pet-label">
+                                <input type="radio" id="gato" name="pet" value="gato">
+                                <img class="pet-option" src="../../imagens/adocao/gato-1.jpg" alt="Gato"> Gato
+                            </label>
+                            <label class="pet-label">
+                                <input type="radio" id="passaro" name="pet" value="passaro">
+                                <img class="pet-option" src="../../imagens/adocao/passaro-1.jpg" alt="Pássaro"> Pássaro
+                            </label>
+                            <br><br>
 
+                            <label for="estado">Estado:</label>
+                            <select id="estado" name="estado" onchange="atualizarCidades()">
+                                <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                            </select>
+                            <br><br>
+
+                            <label for="cidade">Cidade:</label>
+                            <select id="cidade" name="cidade">
+                                <!-- As opções serão preenchidas dinamicamente pelo JavaScript -->
+                            </select>
+                            <br><br>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </section>
                     <section class="social-media my-3 py-3 d-flex flex-column gap-3 d-md-none">
                         <span class="text-start mx-3 fw-semibold">Redes Sociais</span>
                         <div class="d-flex justify-content-evenly align-items-center gap-4">
@@ -302,10 +229,6 @@
 
                 <footer class="footer p-3">
                     <div class="d-flex flex-column justify-content-center align-items-center gap-3">
-                        <p class="fs-6 text-center">
-                            Para valores diferentes, o preço final sempre será o da sacola de
-                            compras
-                        </p>
                         <span>2024 PetCare Comércio LTDA</span>
                         <span>Todos o direitos reservados</span>
                     </div>
@@ -735,7 +658,7 @@
         <a href="#" class="bottom-menu-item" data-title="Serviços">
             <i class="material-icons">pets</i>
         </a>
-        <a href="../html/adocao.html" id="sidebar-mob-item-logged" class="bottom-menu-item" data-title="Adoção">
+        <a href="#" id="sidebar-mob-item-logged" class="bottom-menu-item" data-title="Adoção">
             <i class="material-icons">favorite</i>
         </a>
         <a href="#" class="bottom-menu-item" data-title="Dicas">
@@ -750,6 +673,60 @@
     </div>
 
     <script src="../js/interceptor.js"></script>
+    <script>
+        const cidadesPorEstado = {
+            "AC": ["Rio Branco", "Cruzeiro do Sul", "Sena Madureira", "Tarauacá", "Feijó"],
+            "AL": ["Maceió", "Arapiraca", "Palmeira dos Índios", "Rio Largo", "Penedo"],
+            "AP": ["Macapá", "Santana", "Laranjal do Jari", "Oiapoque", "Porto Grande"],
+            "AM": ["Manaus", "Parintins", "Itacoatiara", "Manacapuru", "Coari"],
+            "BA": ["Salvador", "Feira de Santana", "Vitória da Conquista", "Camaçari", "Itabuna"],
+            "CE": ["Fortaleza", "Caucaia", "Juazeiro do Norte", "Maracanaú", "Sobral"],
+            "DF": ["Brasília"],
+            "ES": ["Vitória", "Vila Velha", "Serra", "Cariacica", "Viana"],
+            "GO": ["Goiânia", "Aparecida de Goiânia", "Anápolis", "Rio Verde", "Luziânia"],
+            "MA": ["São Luís", "Imperatriz", "Timon", "Caxias", "Codó"],
+            "MT": ["Cuiabá", "Várzea Grande", "Rondonópolis", "Sinop", "Tangará da Serra"],
+            "MS": ["Campo Grande", "Dourados", "Três Lagoas", "Corumbá", "Ponta Porã"],
+            "MG": ["Belo Horizonte", "Uberlândia", "Contagem", "Juiz de Fora", "Betim"],
+            "PA": ["Belém", "Ananindeua", "Santarém", "Marabá", "Castanhal"],
+            "PB": ["João Pessoa", "Campina Grande", "Santa Rita", "Patos", "Bayeux"],
+            "PR": ["Curitiba", "Londrina", "Maringá", "Ponta Grossa", "Cascavel"],
+            "PE": ["Recife", "Jaboatão dos Guararapes", "Olinda", "Caruaru", "Petrolina"],
+            "PI": ["Teresina", "Parnaíba", "Picos", "Piripiri", "Floriano"],
+            "RJ": ["Rio de Janeiro", "São Gonçalo", "Duque de Caxias", "Nova Iguaçu", "Niterói"],
+            "RN": ["Natal", "Mossoró", "Parnamirim", "São Gonçalo do Amarante", "Macaíba"],
+            "RS": ["Porto Alegre", "Caxias do Sul", "Pelotas", "Canoas", "Santa Maria"],
+            "RO": ["Porto Velho", "Ji-Paraná", "Ariquemes", "Vilhena", "Cacoal"],
+            "RR": ["Boa Vista", "Rorainópolis", "Caracaraí", "Mucajaí", "Cantá"],
+            "SC": ["Florianópolis", "Joinville", "Blumenau", "São José", "Chapecó"],
+            "SP": ["São Paulo", "Campinas", "Guarulhos", "São Bernardo do Campo", "Santo André"],
+            "SE": ["Aracaju", "Nossa Senhora do Socorro", "Lagarto", "Itabaiana", "Estância"],
+            "TO": ["Palmas", "Araguaína", "Gurupi", "Porto Nacional", "Paraíso do Tocantins"]
+        };
+
+        function atualizarCidades() {
+            const estadoSelect = document.getElementById('estado');
+            const cidadeSelect = document.getElementById('cidade');
+            const estadoSelecionado = estadoSelect.value;
+
+            // Limpa as opções anteriores
+            cidadeSelect.innerHTML = '';
+
+            // Adiciona as novas opções de cidades
+            if (cidadesPorEstado[estadoSelecionado]) {
+                cidadesPorEstado[estadoSelecionado].forEach(cidade => {
+                    const option = document.createElement('option');
+                    option.value = cidade;
+                    option.textContent = cidade;
+                    cidadeSelect.appendChild(option);
+                });
+            }
+        }
+
+        // Inicializa as cidades para o estado selecionado por padrão
+        window.onload = atualizarCidades;
+    </script>
 </body>
 
 </html>
+
