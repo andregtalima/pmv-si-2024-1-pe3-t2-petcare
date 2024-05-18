@@ -1,5 +1,6 @@
+@import url('../css/global-styles/petcare_colors_style.css');
 
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,61 +11,83 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: 20px;
 }
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+#logo {
+    width: 200px;
+}
+
 .titulo {
-   text-align: center;
-   margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
+h3 {
+   font-family: "Poppins", sans-serif;
+   font-size: 13px;
+   margin: 20px 0 0 0;
+}
+
 .container {
     background-color: #f5f1f1;
     padding: 6px;
     margin-bottom: 60px;
     width: 350px;
-    height: 450px;
+    height: 470px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0 darkgray;
+    box-shadow: 0 0 20px 0 var(--petcare-color-gray-light);
 }
 
 form {
     position: absolute;
     top: 80px;
-    transition: .5s ;
+    transition: .5s;
     width: 300px;
     height: 400px;
     margin-top: 30px;
 }
-.buttonsForm{
+
+.buttonsForm {
     margin-top: 40px;
     position: relative;
     border-radius: 30px;
-    box-shadow: 0 0 7px 0 #d67b27 ;
+    box-shadow: 0 0 7px 0 var(--petcare-color-dark-orange);
+}
 
- }
- .buttonsForm button {
+.buttonsForm button {
     cursor: pointer;
     background: transparent;
     border: none;
     position: relative;
-    padding: 10px 29px;
- }
+    padding: 10px 28px;
+}
 
- .btnColor{
+.btnColor {
     position: absolute;
     width: 130px;
     height: 100%;
-    background: linear-gradient(to right, #f29f05, #f29f05 );
+    background: var(--petcare-color-orange);
     border-radius: 30px;
     transition: .3s;
- }
+}
 
- input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
     border: none;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -72,10 +95,16 @@ form {
     outline: none;
     width: 100%;
     font-size: 12px;
- }
+}
 
- button[type="submit"]{
-    background: #f29f05;
+input:active {
+    border-color: var(--petcare-color-orange);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    outline: none;
+}
+
+button[type="submit"] {
+    background: var(--petcare-color-orange);
     color: #000;
     border-radius: 5px;
     width: 100%;
@@ -85,24 +114,36 @@ form {
     font-size: 15px;
     margin-top: 30px;
     cursor: pointer;
- }
+}
 
- #signin{
+#signin {
     left: 25px;
- }
+}
 
- #signup{
+#signup {
     left: 450px;
- }
- 
- h3{
-   font-family: "Poppins", sans-serif;
-   font-size: 13px;
-   margin: 20px 0 0 0;
- }
+}
 
- label{
-   font-size: 10px;
-   font-family: "Poppins", sans-serif;
-   margin: 10px 0 0 0;
- }
+label {
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        justify-content: center;
+    }
+
+    .titulo{
+      margin-top: 40px;
+    }
+
+    h3{
+      margin-bottom: 20px;
+    }
+
+    .container{
+      margin-bottom: 20px;
+    }
+}
