@@ -1,5 +1,6 @@
+@import url('../../petcare_colors_style.css');
 
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,10 +14,24 @@ body {
     align-items: center;
     justify-content: center;
 }
-.titulo {
+
+#logo {
+   width: 200px;
+}
+
+h1 {
    text-align: center;
    margin-bottom: 20px;
 }
+
+h2{
+   color: var(--petcare-color-dark-gray);
+   font-size: medium;
+   text-align: center;
+   margin-bottom: 30px;
+   font-family: 'Poppins', sans-serif;
+}
+
 .container {
     background-color: #f5f1f1;
     padding: 6px;
@@ -59,7 +74,7 @@ form {
     position: absolute;
     width: 130px;
     height: 100%;
-    background: linear-gradient(to right, #f29f05, #f29f05 );
+    background: var(--petcare-color-orange);
     border-radius: 30px;
     transition: .3s;
  }
@@ -74,8 +89,14 @@ form {
     font-size: 12px;
  }
 
+ input:focus {
+   border-color: var(--petcare-color-orange);
+   box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+   outline: none;
+}
+
  button[type="submit"]{
-    background: #f29f05;
+    background: var(--petcare-color-orange);
     color: #000;
     border-radius: 5px;
     width: 100%;
