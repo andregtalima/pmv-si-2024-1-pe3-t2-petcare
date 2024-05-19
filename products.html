@@ -143,7 +143,7 @@
                                             alt="Placeholder Image" class="product-image">
                                         <h2 class="product-name">Organnact Cat Probiótico</h2>
                                         <p class="product-price">R$ 72,90</p>
-                                        <button class="btn-primary buy-button">Comprar</button>
+                                        <button class="btn-primary buy-button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
                                     </div>
                                 </div>
                                 <div class="col product-visible" data-price="295" data-category="aves">
@@ -152,7 +152,7 @@
                                             alt="Placeholder Image" class="product-image">
                                         <h2 class="product-name">Ração Nutrópica</h2>
                                         <p class="product-price">R$ 295,90</p>
-                                        <button class="buy-button">Comprar</button>
+                                        <button class="buy-button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
                                     </div>
                                 </div>
                                 <div class="col product-visible" data-price="196" data-category="caes">
@@ -161,7 +161,7 @@
                                             alt="Placeholder Image" class="product-image">
                                         <h2 class="product-name">Ração Premier Pet</h2>
                                         <p class="product-price">R$ 196,80</p>
-                                        <button class="buy-button">Comprar</button>
+                                        <button class="buy-button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
                                     </div>
                                 </div>
                                 <div class="col product-visible" data-price="130" data-category="caes">
@@ -170,7 +170,7 @@
                                             alt="Placeholder Image" class="product-image">
                                         <h2 class="product-name">Ração Seca Magnus</h2>
                                         <p class="product-price">R$ 130,60</p>
-                                        <button class="buy-button">Comprar</button>
+                                        <button class="buy-button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
                                     </div>
                                 </div>
                                 <div class="col product-visible" data-price="86" data-category="peixes">
@@ -179,7 +179,7 @@
                                             alt="Placeholder Image" class="product-image">
                                         <h2 class="product-name">TetraColor p/ peixes</h2>
                                         <p class="product-price">R$ 86,90</p>
-                                        <button class="buy-button">Comprar</button>
+                                        <button class="buy-button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
                                     </div>
                                 </div>
                                 <div class="col product-visible" data-price="59" data-category="gatos" data-sale="true">
@@ -188,7 +188,7 @@
                                             alt="Placeholder Image" class="product-image">
                                         <h2 class="product-name">Vermifugo Drontal</h2>
                                         <p class="product-price">R$ 59,90</p>
-                                        <button class="buy-button">Comprar</button>
+                                        <button class="buy-button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
                                     </div>
                                 </div>
                                 <div class="col product-visible" data-price="22" data-category="aves">
@@ -197,7 +197,7 @@
                                             alt="Placeholder Image" class="product-image">
                                         <h2 class="product-name">Ração Zootekna Realbird</h2>
                                         <p class="product-price">R$ 22,70</p>
-                                        <button class="buy-button">Comprar</button>
+                                        <button class="buy-button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
                                     </div>
                                 </div>
                                 <div class="col product-visible" data-price="182" data-category="aves">
@@ -206,7 +206,7 @@
                                             alt="Placeholder Image" class="product-image">
                                         <h2 class="product-name">Bolsa de Transporte</h2>
                                         <p class="product-price">R$ 182,48</p>
-                                        <button class="buy-button">Comprar</button>
+                                        <button class="buy-button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
                                     </div>
                                 </div>
                             </div>
@@ -238,6 +238,143 @@
             <i class="material-icons">exit_to_app</i>
         </a>
     </div>
+        <!-- Modal -->
+<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Dados do Pagamento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #f22f1d;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Nome no Cartão:</strong> <span id="paymentCardName">Ian Benevides</span></p>
+                <p><strong>Número do Cartão:</strong> <span id="paymentCardNumber">**** **** **** 1234</span></p>
+                <p><strong>Data de Validade:</strong> <span id="paymentExpiryDate">12/24</span></p>
+                <p><strong>CVV:</strong> <span id="paymentCvv">***</span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" >Fechar</button>
+                <button type="button" class="btn btn-primary" id="alterPaymentBtn" data-toggle="modal" data-target="#editPaymentModal">Alterar Dados do Pagamento</button>
+                <button type="button" class="btn btn-success" id="sendPaymentBtn" >Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Payment Modal -->
+<div class="modal fade" id="editPaymentModal" tabindex="-1" role="dialog" aria-labelledby="editPaymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editPaymentModalLabel">Editar Dados do Pagamento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulário para editar os dados do pagamento -->
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="cardName">Nome no Cartão:</label>
+                        <input type="text" class="form-control" id="cardName" placeholder="Nome no Cartão">
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Número do Cartão:</label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="Número do Cartão">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">Data de Validade:</label>
+                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/AAAA">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="savePaymentBtn">Salvar Alterações</button>
+                <script>
+                    // Salvar Alterações
+                    document.getElementById('savePaymentBtn').addEventListener('click', function () {
+                        var cardName = document.getElementById('cardName').value;
+                        var cardNumber = document.getElementById('cardNumber').value;
+                        var expiryDate = document.getElementById('expiryDate').value;
+                        var cvv = document.getElementById('cvv').value;
+                
+                        // Atualizar os dados no modal principal
+                        document.getElementById('paymentCardName').innerText = cardName;
+                        document.getElementById('paymentCardNumber').innerText = '**** **** **** ' + cardNumber.slice(-4); // Exibe apenas os últimos 4 dígitos
+                        document.getElementById('paymentExpiryDate').innerText = expiryDate;
+                        document.getElementById('paymentCvv').innerText = cvv;
+                
+                        // Fechar o modal de edição
+                        $('#editPaymentModal').modal('hide');
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilo personalizado para o botão "Fechar" do modal */
+    .close {
+        color: #f22f1d;
+    }
+
+     /* Estilo personalizado para o botão "Alterar Dados do Pagamento" do modal */
+     #alterPaymentBtn {
+            background-color: #d96704;
+            border-color: #d96704;
+        }
+
+         /* Estilo personalizado para o botão "Enviar" do modal */
+         #sendPaymentBtn {
+            background-color: #f2b705;
+            border-color: #f2b705;
+        }
+</style>
+
+<script>
+    // Limitar número de caracteres nos campos
+    document.getElementById('cardNumber').addEventListener('input', function (e) {
+        this.value = this.value.replace(/[^0-9]/g, '').slice(0, 16);
+    });
+
+    document.getElementById('expiryDate').addEventListener('input', function (e) {
+        this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4);
+    });
+
+    document.getElementById('cvv').addEventListener('input', function (e) {
+        this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3);
+    });
+
+    // Salvar Alterações
+    document.getElementById('savePaymentBtn').addEventListener('click', function () {
+        var cardName = document.getElementById('cardName').value;
+        var cardNumber = document.getElementById('cardNumber').value;
+        var expiryDate = document.getElementById('expiryDate').value;
+        var cvv = document.getElementById('cvv').value;
+
+        // Aqui você pode fazer o que quiser com os dados, por exemplo, enviar para um servidor
+        // Por enquanto, apenas exibimos os valores no console
+        console.log("Nome no Cartão:", cardName);
+        console.log("Número do Cartão:", cardNumber);
+        console.log("Data de Validade:", expiryDate);
+        console.log("CVV:", cvv);
+
+        // Fechar o modal
+        $('#editPaymentModal').modal('hide');
+    });
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-2ge9OBNLSmH3q5SvaOc6cp0r0iHRChV7aIbXLvZ6PA9UCl5LIUpnHos2vbW5Q8t4" crossorigin="anonymous" />
